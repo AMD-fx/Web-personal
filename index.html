@@ -315,4 +315,1127 @@
                         </div>
 
                         <!-- Prompt Pose Duduk -->
-                        <div onclick="openProductDetail(4)" class="flex items-center justify-between p-3 rounded-xl bg-gray-50 dark:bg-gray-800/60 hover:bg-red-50 dark:hover:bg-brand-red/10 border border-
+                        <div onclick="openProductDetail(4)" class="flex items-center justify-between p-3 rounded-xl bg-gray-50 dark:bg-gray-800/60 hover:bg-red-50 dark:hover:bg-brand-red/10 border border-gray-200/60 dark:border-gray-700 cursor-pointer transition-all group">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded-lg bg-red-100 dark:bg-brand-red/20 text-brand-red flex items-center justify-center text-xs font-bold">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                </div>
+                                <span class="text-xs font-semibold text-gray-800 dark:text-gray-200 group-hover:text-brand-red transition-colors">Prompt Universal Pose Duduk</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:text-brand-red group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATALOG SECTION -->
+            <div id="catalog-section" class="scroll-mt-20">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                    <div>
+                        <h2 class="text-xl font-black text-gray-900 dark:text-white tracking-tight">Produk Pilihan AMD.fx</h2>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Solusi digital praktis untuk editing, content creation, dan kebutuhan kreatif.</p>
+                    </div>
+
+                    <!-- Search Input -->
+                    <div class="relative w-full md:w-64">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-xs"></i>
+                        <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Cari produk..." class="w-full pl-9 pr-4 py-2 text-xs rounded-xl bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark text-gray-800 dark:text-gray-200 focus:outline-none focus:border-brand-red transition-all shadow-sm">
+                    </div>
+                </div>
+
+                <!-- Category Filters Horizontal Pill Scroll -->
+                <div class="flex items-center space-x-2 overflow-x-auto no-scrollbar pb-3 mb-4">
+                    <button onclick="filterCategory('All')" class="cat-pill active px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-brand-red text-white transition-all shadow-sm">Semua</button>
+                    <button onclick="filterCategory('Editing')" class="cat-pill px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">Editing</button>
+                    <button onclick="filterCategory('Sound')" class="cat-pill px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">Sound</button>
+                    <button onclick="filterCategory('AI Prompt')" class="cat-pill px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">AI Prompt</button>
+                    <button onclick="filterCategory('Premium')" class="cat-pill px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">Premium App</button>
+                </div>
+
+                <!-- Product Grid (2 columns on mobile, 3 on desktop) -->
+                <div id="productGrid" class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+                    <!-- Dynamic Product Cards Injected via JS -->
+                </div>
+
+                <!-- Empty State -->
+                <div id="emptyState" class="hidden py-12 text-center">
+                    <div class="w-16 h-16 bg-red-100 dark:bg-brand-red/10 text-brand-red rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fa-solid fa-box-open text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-gray-800 dark:text-gray-200">Produk Tidak Ditemukan</h3>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Coba kata kunci lain atau pilih kategori berbeda.</p>
+                </div>
+            </div>
+
+            <!-- TRUST SECTION -->
+            <div class="mt-12 mb-8">
+                <h3 class="text-center font-extrabold text-lg text-gray-900 dark:text-white mb-6">Kenapa Pilih AMD.fx?</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div class="p-4 rounded-2xl bg-white dark:bg-brand-cardDark border border-gray-100 dark:border-brand-borderDark shadow-soft text-center">
+                        <div class="w-10 h-10 rounded-xl bg-brand-red/10 text-brand-red flex items-center justify-center mx-auto mb-2 text-lg">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h4 class="font-bold text-xs text-gray-800 dark:text-gray-100 mb-1">Praktis & Instan</h4>
+                        <p class="text-[11px] text-gray-500 dark:text-gray-400">Produk siap pakai tinggal download & pakai.</p>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-white dark:bg-brand-cardDark border border-gray-100 dark:border-brand-borderDark shadow-soft text-center">
+                        <div class="w-10 h-10 rounded-xl bg-brand-red/10 text-brand-red flex items-center justify-center mx-auto mb-2 text-lg">
+                            <i class="fa-solid fa-tag"></i>
+                        </div>
+                        <h4 class="font-bold text-xs text-gray-800 dark:text-gray-100 mb-1">Harga Ramah</h4>
+                        <p class="text-[11px] text-gray-500 dark:text-gray-400">Harga ramah dikantong untuk creator pemula.</p>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-white dark:bg-brand-cardDark border border-gray-100 dark:border-brand-borderDark shadow-soft text-center">
+                        <div class="w-10 h-10 rounded-xl bg-brand-red/10 text-brand-red flex items-center justify-center mx-auto mb-2 text-lg">
+                            <i class="fa-solid fa-cloud-arrow-down"></i>
+                        </div>
+                        <h4 class="font-bold text-xs text-gray-800 dark:text-gray-100 mb-1">Akses Google Drive</h4>
+                        <p class="text-[11px] text-gray-500 dark:text-gray-400">File tersimpan aman di Google Drive.</p>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-white dark:bg-brand-cardDark border border-gray-100 dark:border-brand-borderDark shadow-soft text-center">
+                        <div class="w-10 h-10 rounded-xl bg-brand-red/10 text-brand-red flex items-center justify-center mx-auto mb-2 text-lg">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h4 class="font-bold text-xs text-gray-800 dark:text-gray-100 mb-1">Bantuan WA Fast</h4>
+                        <p class="text-[11px] text-gray-500 dark:text-gray-400">Admin siap membantu kendala kamu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ SECTION -->
+            <div class="mb-8">
+                <h3 class="font-extrabold text-lg text-gray-900 dark:text-white mb-4">Pertanyaan Umum (FAQ)</h3>
+                <div class="space-y-3">
+                    <details class="group bg-white dark:bg-brand-cardDark rounded-2xl p-4 border border-gray-100 dark:border-brand-borderDark shadow-soft">
+                        <summary class="flex justify-between items-center font-bold text-xs sm:text-sm text-gray-800 dark:text-gray-200 cursor-pointer list-none">
+                            <span>Bagaimana cara melakukan pembelian?</span>
+                            <i class="fa-solid fa-chevron-down text-xs text-gray-400 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 pt-2 border-t border-gray-100 dark:border-gray-800">
+                            Pilih produk yang kamu inginkan, klik <strong>Buy Now</strong>, konfirmasi data pesanan, lalu sistem akan otomatis mengarahkan ke WhatsApp AMD.fx untuk pengiriman file.
+                        </p>
+                    </details>
+
+                    <details class="group bg-white dark:bg-brand-cardDark rounded-2xl p-4 border border-gray-100 dark:border-brand-borderDark shadow-soft">
+                        <summary class="flex justify-between items-center font-bold text-xs sm:text-sm text-gray-800 dark:text-gray-200 cursor-pointer list-none">
+                            <span>Apakah produk langsung dikirim setelah pembayaran?</span>
+                            <i class="fa-solid fa-chevron-down text-xs text-gray-400 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 pt-2 border-t border-gray-100 dark:border-gray-800">
+                            Ya! Begitu pembayaran dikonfirmasi via WhatsApp, admin akan langsung memberikan link akses resmi Google Drive/Google Docs.
+                        </p>
+                    </details>
+
+                    <details class="group bg-white dark:bg-brand-cardDark rounded-2xl p-4 border border-gray-100 dark:border-brand-borderDark shadow-soft">
+                        <summary class="flex justify-between items-center font-bold text-xs sm:text-sm text-gray-800 dark:text-gray-200 cursor-pointer list-none">
+                            <span>Apakah aset dapat digunakan untuk proyek komersial?</span>
+                            <i class="fa-solid fa-chevron-down text-xs text-gray-400 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 pt-2 border-t border-gray-100 dark:border-gray-800">
+                            Sebagian besar aset (seperti Sound Effect & Backsound) dilengkapi dengan Resell / Commercial Rights. Kamu bisa cek lisensi di detail masing-masing produk.
+                        </p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="mt-12 py-8 border-t border-gray-200/80 dark:border-brand-borderDark text-center">
+                <div class="mb-4">
+                    <span class="text-2xl font-black tracking-tight text-brand-black dark:text-white">AMD<span class="text-brand-red">.fx</span></span>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 max-w-xs mx-auto">Digital Store untuk kebutuhan editing, AI & creator.</p>
+                </div>
+                <div class="flex justify-center space-x-6 text-xs text-gray-500 dark:text-gray-400 mb-6">
+                    <a onclick="switchTab('home')" class="hover:text-brand-red cursor-pointer">Beranda</a>
+                    <a onclick="switchTab('history')" class="hover:text-brand-red cursor-pointer">Histori</a>
+                    <a onclick="switchTab('help')" class="hover:text-brand-red cursor-pointer">Pusat Bantuan</a>
+                    <a onclick="switchTab('account')" class="hover:text-brand-red cursor-pointer">Akun Saya</a>
+                </div>
+                <p class="text-[11px] text-gray-400">© 2026 AMD.fx. All rights reserved.</p>
+            </footer>
+
+        </section>
+
+        <!-- VIEW 2: LINKTREE STYLE LANDING -->
+        <section id="view-linktree" class="hidden page-transition">
+            <div class="max-w-md mx-auto py-6">
+                <!-- Linktree Profile Card -->
+                <div class="text-center mb-8">
+                    <div class="relative inline-block mb-3">
+                        <div class="w-24 h-24 rounded-3xl bg-gradient-to-tr from-brand-black via-brand-darkRed to-brand-red p-1 shadow-glow mx-auto">
+                            <div class="w-full h-full bg-brand-black rounded-[22px] flex items-center justify-center text-3xl font-black text-white">
+                                AMD<span class="text-brand-red">.fx</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-extrabold text-gray-900 dark:text-white flex items-center justify-center space-x-1.5">
+                        <span>AMD.fx</span>
+                        <i class="fa-solid fa-circle-check text-brand-red text-sm"></i>
+                    </h2>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 max-w-xs mx-auto">
+                        Digital Store untuk kebutuhan editing, AI & creator. Pilih produk di bawah ini untuk pemesanan cepat.
+                    </p>
+                </div>
+
+                <!-- Linktree Buttons Stack -->
+                <div class="space-y-3">
+                    <button onclick="openDirectWhatsApp('Halo AMD.fx, saya ingin membeli Alight Motion Premium.')" class="w-full p-4 rounded-2xl bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark shadow-soft hover:border-brand-red dark:hover:border-brand-red flex items-center justify-between transition-all group">
+                        <div class="flex items-center space-x-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-red-100 dark:bg-brand-red/20 text-brand-red flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div class="text-left">
+                                <h4 class="font-bold text-xs sm:text-sm text-gray-800 dark:text-gray-100">Alight Motion Premium</h4>
+                                <p class="text-[11px] text-gray-400">Pesan Instan via WhatsApp</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-xs text-gray-400 group-hover:text-brand-red group-hover:translate-x-1 transition-all"></i>
+                    </button>
+
+                    <button onclick="openProductDetail(1)" class="w-full p-4 rounded-2xl bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark shadow-soft hover:border-brand-red dark:hover:border-brand-red flex items-center justify-between transition-all group">
+                        <div class="flex items-center space-x-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-red-100 dark:bg-brand-red/20 text-brand-red flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-folder-open"></i>
+                            </div>
+                            <div class="text-left">
+                                <h4 class="font-bold text-xs sm:text-sm text-gray-800 dark:text-gray-100">Aset Editing Lengkap (31GB+)</h4>
+                                <p class="text-[11px] text-brand-red font-semibold">Rp10.000 <span class="line-through text-gray-400 text-[10px]">Rp35.000</span></p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-xs text-gray-400 group-hover:text-brand-red group-hover:translate-x-1 transition-all"></i>
+                    </button>
+
+                    <button onclick="openProductDetail(2)" class="w-full p-4 rounded-2xl bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark shadow-soft hover:border-brand-red dark:hover:border-brand-red flex items-center justify-between transition-all group">
+                        <div class="flex items-center space-x-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-red-100 dark:bg-brand-red/20 text-brand-red flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-music"></i>
+                            </div>
+                            <div class="text-left">
+                                <h4 class="font-bold text-xs sm:text-sm text-gray-800 dark:text-gray-100">3500++ Sound Effect & Backsound</h4>
+                                <p class="text-[11px] text-brand-red font-semibold">Rp5.000 <span class="line-through text-gray-400 text-[10px]">Rp38.000</span></p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-xs text-gray-400 group-hover:text-brand-red group-hover:translate-x-1 transition-all"></i>
+                    </button>
+
+                    <button onclick="openProductDetail(3)" class="w-full p-4 rounded-2xl bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark shadow-soft hover:border-brand-red dark:hover:border-brand-red flex items-center justify-between transition-all group">
+                        <div class="flex items-center space-x-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+                            <div class="text-left">
+                                <h4 class="font-bold text-xs sm:text-sm text-gray-800 dark:text-gray-100">001 Free Prompt Kamera Atas</h4>
+                                <p class="text-[11px] text-emerald-600 dark:text-emerald-400 font-bold">GRATIS / FREE</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-xs text-gray-400 group-hover:text-brand-red group-hover:translate-x-1 transition-all"></i>
+                    </button>
+
+                    <button onclick="openProductDetail(4)" class="w-full p-4 rounded-2xl bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark shadow-soft hover:border-brand-red dark:hover:border-brand-red flex items-center justify-between transition-all group">
+                        <div class="flex items-center space-x-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-red-100 dark:bg-brand-red/20 text-brand-red flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div class="text-left">
+                                <h4 class="font-bold text-xs sm:text-sm text-gray-800 dark:text-gray-100">002 Prompt Pose Duduk ChatGPT</h4>
+                                <p class="text-[11px] text-brand-red font-semibold">Rp5.000 <span class="line-through text-gray-400 text-[10px]">Rp10.000</span></p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-right text-xs text-gray-400 group-hover:text-brand-red group-hover:translate-x-1 transition-all"></i>
+                    </button>
+
+                    <button onclick="switchTab('home')" class="w-full p-4 rounded-2xl bg-brand-black dark:bg-brand-red text-white font-bold text-xs sm:text-sm flex items-center justify-center space-x-2 shadow-lg transition-all hover:scale-[1.01]">
+                        <i class="fa-solid fa-store"></i>
+                        <span>Lihat Seluruh Website Toko</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 3: HISTORI / RIWAYAT PESANAN -->
+        <section id="view-history" class="hidden page-transition">
+            <div class="mb-6">
+                <h2 class="text-xl font-black text-gray-900 dark:text-white">Riwayat Pesanan</h2>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Daftar transaksi dan pesanan yang pernah kamu buat.</p>
+            </div>
+
+            <!-- Filter Status -->
+            <div class="flex items-center space-x-2 overflow-x-auto no-scrollbar pb-3 mb-4">
+                <button onclick="filterHistory('all')" class="hist-filter active px-3.5 py-1.5 rounded-xl text-xs font-bold bg-brand-red text-white shadow-sm">Semua</button>
+                <button onclick="filterHistory('pending')" class="hist-filter px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark text-gray-700 dark:text-gray-300">Menunggu</button>
+                <button onclick="filterHistory('completed')" class="hist-filter px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark text-gray-700 dark:text-gray-300">Selesai</button>
+            </div>
+
+            <!-- History List Container -->
+            <div id="historyList" class="space-y-3">
+                <!-- Injected via JS -->
+            </div>
+
+            <!-- Empty State for History -->
+            <div id="historyEmpty" class="py-16 text-center bg-white dark:bg-brand-cardDark rounded-3xl border border-gray-100 dark:border-brand-borderDark shadow-soft">
+                <div class="w-16 h-16 bg-red-100 dark:bg-brand-red/10 text-brand-red rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i class="fa-solid fa-receipt text-2xl"></i>
+                </div>
+                <h3 class="text-sm font-bold text-gray-800 dark:text-gray-200">Belum Ada Pesanan</h3>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 max-w-xs mx-auto">Pesanan kamu akan muncul di sini setelah melakukan transaksi via WhatsApp.</p>
+                <button onclick="switchTab('home')" class="mt-4 px-5 py-2.5 rounded-xl bg-brand-red hover:bg-brand-darkRed text-white text-xs font-bold shadow-md transition-all">
+                    Jelajahi Produk
+                </button>
+            </div>
+        </section>
+
+        <!-- VIEW 4: ISI SALDO -->
+        <section id="view-saldo" class="hidden page-transition max-w-lg mx-auto">
+            <div class="mb-6">
+                <h2 class="text-xl font-black text-gray-900 dark:text-white">Isi Saldo Account</h2>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Tambahkan saldo akun untuk kemudahan transaksi digital.</p>
+            </div>
+
+            <!-- Balance Card -->
+            <div class="bg-gradient-to-r from-brand-black to-brand-dark rounded-3xl p-6 text-white shadow-xl mb-6 relative overflow-hidden border border-gray-800">
+                <div class="absolute right-0 top-0 translate-x-4 -translate-y-4 w-32 h-32 bg-brand-red/30 rounded-full blur-2xl"></div>
+                <p class="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-1">Saldo Saat Ini</p>
+                <h3 class="text-3xl font-extrabold tracking-tight mb-4" id="saldoDisplay">Rp0</h3>
+                <div class="flex items-center space-x-2 text-[11px] text-gray-300 bg-white/10 px-3 py-1.5 rounded-xl w-fit backdrop-blur-md">
+                    <i class="fa-solid fa-circle-info text-brand-lightRed"></i>
+                    <span>Top up manual dikonfirmasi instan oleh Admin WA</span>
+                </div>
+            </div>
+
+            <!-- Nominal Selection -->
+            <div class="bg-white dark:bg-brand-cardDark rounded-3xl p-5 border border-gray-100 dark:border-brand-borderDark shadow-soft">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Pilih Nominal Top Up</h4>
+                <div class="grid grid-cols-2 gap-3 mb-4">
+                    <button onclick="selectTopupNominal(10000)" class="topup-btn p-3.5 rounded-2xl border border-gray-200 dark:border-brand-borderDark text-left hover:border-brand-red dark:hover:border-brand-red transition-all">
+                        <span class="block text-xs text-gray-400">Nominal</span>
+                        <span class="block text-sm font-extrabold text-gray-800 dark:text-gray-100 mt-0.5">Rp10.000</span>
+                    </button>
+                    <button onclick="selectTopupNominal(20000)" class="topup-btn p-3.5 rounded-2xl border border-gray-200 dark:border-brand-borderDark text-left hover:border-brand-red dark:hover:border-brand-red transition-all">
+                        <span class="block text-xs text-gray-400">Nominal</span>
+                        <span class="block text-sm font-extrabold text-gray-800 dark:text-gray-100 mt-0.5">Rp20.000</span>
+                    </button>
+                    <button onclick="selectTopupNominal(50000)" class="topup-btn p-3.5 rounded-2xl border border-gray-200 dark:border-brand-borderDark text-left hover:border-brand-red dark:hover:border-brand-red transition-all">
+                        <span class="block text-xs text-gray-400">Nominal</span>
+                        <span class="block text-sm font-extrabold text-gray-800 dark:text-gray-100 mt-0.5">Rp50.000</span>
+                    </button>
+                    <button onclick="selectTopupNominal(100000)" class="topup-btn p-3.5 rounded-2xl border border-gray-200 dark:border-brand-borderDark text-left hover:border-brand-red dark:hover:border-brand-red transition-all">
+                        <span class="block text-xs text-gray-400">Nominal</span>
+                        <span class="block text-sm font-extrabold text-gray-800 dark:text-gray-100 mt-0.5">Rp100.000</span>
+                    </button>
+                </div>
+
+                <div class="mb-5">
+                    <label class="block text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1.5">Atau Masukkan Custom Nominal</label>
+                    <div class="relative">
+                        <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-400">Rp</span>
+                        <input type="number" id="customTopupInput" placeholder="Contoh: 25000" class="w-full pl-9 pr-4 py-2.5 text-xs rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 font-bold text-gray-800 dark:text-gray-200 focus:outline-none focus:border-brand-red">
+                    </div>
+                </div>
+
+                <div class="p-3.5 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200/60 dark:border-amber-800/40 mb-5">
+                    <p class="text-[11px] text-amber-800 dark:text-amber-300 leading-relaxed">
+                        <i class="fa-solid fa-circle-exclamation mr-1"></i>
+                        Untuk saat ini pengisian saldo dilakukan melalui konfirmasi manual WhatsApp AMD.fx.
+                    </p>
+                </div>
+
+                <button onclick="processTopUpWhatsApp()" class="w-full py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm flex items-center justify-center space-x-2 shadow-md transition-all">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Isi Saldo via WhatsApp</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- VIEW 5: PUSAT BANTUAN / HELP CENTER -->
+        <section id="view-help" class="hidden page-transition">
+            <div class="mb-6">
+                <h2 class="text-xl font-black text-gray-900 dark:text-white">Pusat Bantuan</h2>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Punya pertanyaan seputar produk atau pesanan? Kami siap membantu.</p>
+            </div>
+
+            <!-- Contact Admin Card -->
+            <div class="bg-gradient-to-br from-emerald-600 to-teal-700 rounded-3xl p-6 text-white shadow-xl mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                    <span class="px-2.5 py-0.5 rounded-full bg-white/20 text-[10px] font-bold uppercase tracking-wider">Fast Response</span>
+                    <h3 class="text-lg font-bold mt-1">Butuh Bantuan Langsung?</h3>
+                    <p class="text-xs text-emerald-100 mt-0.5">Tim support AMD.fx aktif melayani pertanyaan kamu via WA.</p>
+                </div>
+                <button onclick="openDirectWhatsApp('Halo AMD.fx, saya membutuhkan bantuan mengenai pesanan/produk saya.')" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-white text-emerald-700 font-bold text-xs shadow-md hover:bg-emerald-50 transition-all flex items-center justify-center space-x-2 whitespace-nowrap">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Chat WhatsApp</span>
+                </button>
+            </div>
+
+            <!-- Help Topics Categories -->
+            <h3 class="font-bold text-sm text-gray-800 dark:text-gray-200 mb-3">Kategori Bantuan</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8">
+                <div class="p-4 rounded-2xl bg-white dark:bg-brand-cardDark border border-gray-100 dark:border-brand-borderDark shadow-soft">
+                    <i class="fa-solid fa-cart-shopping text-brand-red text-lg mb-2"></i>
+                    <h4 class="font-bold text-xs text-gray-800 dark:text-gray-200">Pembelian</h4>
+                    <p class="text-[10px] text-gray-400 mt-0.5">Cara order & checkout</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-white dark:bg-brand-cardDark border border-gray-100 dark:border-brand-borderDark shadow-soft">
+                    <i class="fa-solid fa-credit-card text-brand-red text-lg mb-2"></i>
+                    <h4 class="font-bold text-xs text-gray-800 dark:text-gray-200">Pembayaran</h4>
+                    <p class="text-[10px] text-gray-400 mt-0.5">Metode transfer & e-wallet</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-white dark:bg-brand-cardDark border border-gray-100 dark:border-brand-borderDark shadow-soft">
+                    <i class="fa-solid fa-folder-download text-brand-red text-lg mb-2"></i>
+                    <h4 class="font-bold text-xs text-gray-800 dark:text-gray-200">Download Access</h4>
+                    <p class="text-[10px] text-gray-400 mt-0.5">Kendala Google Drive</p>
+                </div>
+            </div>
+
+            <!-- FAQ List -->
+            <h3 class="font-bold text-sm text-gray-800 dark:text-gray-200 mb-3">Pertanyaan Populer</h3>
+            <div class="space-y-3">
+                <div class="bg-white dark:bg-brand-cardDark rounded-2xl p-4 border border-gray-100 dark:border-brand-borderDark shadow-soft">
+                    <h4 class="font-bold text-xs text-gray-800 dark:text-gray-200">Bagaimana jika link Google Drive bermasalah atau limit?</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1.5 leading-relaxed">
+                        Jika mendapati kuota download Google Drive terlampaui, langsung kirimkan screenshot ke WhatsApp AMD.fx. Kami akan menyediakan mirror link cadangan secara gratis.
+                    </p>
+                </div>
+                <div class="bg-white dark:bg-brand-cardDark rounded-2xl p-4 border border-gray-100 dark:border-brand-borderDark shadow-soft">
+                    <h4 class="font-bold text-xs text-gray-800 dark:text-gray-200">Berapa lama akses file digital berlaku?</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1.5 leading-relaxed">
+                        Seluruh produk digital yang kamu beli dari AMD.fx mendapatkan akses seumur hidup (Lifetime Access).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 6: AKUN SAYA / ACCOUNT -->
+        <section id="view-account" class="hidden page-transition max-w-md mx-auto">
+            <div class="mb-6">
+                <h2 class="text-xl font-black text-gray-900 dark:text-white">Akun Saya</h2>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Kelola informasi profil dan pengaturan toko kamu.</p>
+            </div>
+
+            <!-- Profile Header Card -->
+            <div class="bg-white dark:bg-brand-cardDark rounded-3xl p-5 border border-gray-100 dark:border-brand-borderDark shadow-soft mb-6 text-center">
+                <div class="relative w-20 h-20 mx-auto mb-3">
+                    <div class="w-full h-full rounded-full bg-brand-black dark:bg-brand-red text-white flex items-center justify-center font-black text-2xl shadow-lg">
+                        AMD
+                    </div>
+                    <span class="absolute bottom-0 right-0 w-5 h-5 bg-emerald-500 border-2 border-white dark:border-brand-cardDark rounded-full"></span>
+                </div>
+                <h3 class="font-extrabold text-base text-gray-900 dark:text-white">AMD.fx User</h3>
+                <p class="text-xs text-gray-400 mt-0.5">Digital Creator Store Member</p>
+                
+                <div class="mt-4 pt-4 border-t border-gray-100 dark:border-brand-borderDark flex justify-around text-center">
+                    <div>
+                        <span class="block font-black text-sm text-gray-800 dark:text-gray-100" id="accountTotalOrders">0</span>
+                        <span class="text-[10px] text-gray-400">Total Pesanan</span>
+                    </div>
+                    <div class="w-px h-8 bg-gray-100 dark:bg-gray-800"></div>
+                    <div>
+                        <span class="block font-black text-sm text-emerald-500">Verified</span>
+                        <span class="text-[10px] text-gray-400">Status Akun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Account Menu Items -->
+            <div class="bg-white dark:bg-brand-cardDark rounded-3xl border border-gray-100 dark:border-brand-borderDark shadow-soft divide-y divide-gray-100 dark:divide-brand-borderDark overflow-hidden mb-6">
+                <a onclick="switchTab('history')" class="flex items-center justify-between p-4 hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer transition-colors">
+                    <div class="flex items-center space-x-3 text-xs font-semibold text-gray-800 dark:text-gray-200">
+                        <i class="fa-solid fa-receipt w-5 text-brand-red"></i>
+                        <span>Riwayat Pesanan</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-xs text-gray-400"></i>
+                </a>
+                <a onclick="switchTab('saldo')" class="flex items-center justify-between p-4 hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer transition-colors">
+                    <div class="flex items-center space-x-3 text-xs font-semibold text-gray-800 dark:text-gray-200">
+                        <i class="fa-solid fa-wallet w-5 text-brand-red"></i>
+                        <span>Saldo & Top Up</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-xs text-gray-400"></i>
+                </a>
+                <a onclick="switchTab('help')" class="flex items-center justify-between p-4 hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer transition-colors">
+                    <div class="flex items-center space-x-3 text-xs font-semibold text-gray-800 dark:text-gray-200">
+                        <i class="fa-solid fa-circle-question w-5 text-brand-red"></i>
+                        <span>Pusat Bantuan</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-xs text-gray-400"></i>
+                </a>
+                <a onclick="openDirectWhatsApp('Halo AMD.fx, saya ingin bertanya via WhatsApp.')" class="flex items-center justify-between p-4 hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer transition-colors">
+                    <div class="flex items-center space-x-3 text-xs font-semibold text-gray-800 dark:text-gray-200">
+                        <i class="fa-brands fa-whatsapp w-5 text-emerald-500"></i>
+                        <span>Hubungi WhatsApp Official</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-xs text-gray-400"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FIXED BOTTOM NAVIGATION BAR -->
+    <nav class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-brand-cardDark/95 backdrop-blur-md border-t border-gray-200/80 dark:border-brand-borderDark px-2 py-1 transition-all">
+        <div class="max-w-md mx-auto flex items-center justify-between relative">
+            
+            <!-- 1. BERANDA -->
+            <button onclick="switchTab('home')" id="nav-home" class="nav-btn flex-1 py-2 flex flex-col items-center justify-center text-gray-400 transition-colors active-tab">
+                <i class="fa-solid fa-house text-base mb-1"></i>
+                <span class="text-[10px] font-semibold tracking-tight">Beranda</span>
+            </button>
+
+            <!-- 2. HISTORI -->
+            <button onclick="switchTab('history')" id="nav-history" class="nav-btn flex-1 py-2 flex flex-col items-center justify-center text-gray-400 transition-colors">
+                <i class="fa-solid fa-clock-rotate-left text-base mb-1"></i>
+                <span class="text-[10px] font-semibold tracking-tight">Histori</span>
+            </button>
+
+            <!-- 3. ISI SALDO (FLOATING CENTER BUTTON) -->
+            <div class="flex-1 flex justify-center -mt-5 relative z-10">
+                <button onclick="switchTab('saldo')" id="nav-saldo" class="w-12 h-12 rounded-full bg-brand-red text-white flex flex-col items-center justify-center shadow-floating pulse-glow hover:scale-105 active:scale-95 transition-transform">
+                    <i class="fa-solid fa-wallet text-lg"></i>
+                </button>
+            </div>
+
+            <!-- 4. PUSAT BANTUAN -->
+            <button onclick="switchTab('help')" id="nav-help" class="nav-btn flex-1 py-2 flex flex-col items-center justify-center text-gray-400 transition-colors">
+                <i class="fa-solid fa-circle-question text-base mb-1"></i>
+                <span class="text-[10px] font-semibold tracking-tight">Pusat Bantuan</span>
+            </button>
+
+            <!-- 5. AKUN SAYA -->
+            <button onclick="switchTab('account')" id="nav-account" class="nav-btn flex-1 py-2 flex flex-col items-center justify-center text-gray-400 transition-colors">
+                <i class="fa-solid fa-user text-base mb-1"></i>
+                <span class="text-[10px] font-semibold tracking-tight">Akun Saya</span>
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- PRODUCT DETAIL MODAL -->
+    <div id="productModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex items-end sm:items-center justify-center p-0 sm:p-4">
+        <div id="productModalContent" class="w-full max-w-lg bg-white dark:bg-brand-cardDark rounded-t-3xl sm:rounded-3xl max-h-[90vh] flex flex-col overflow-hidden transform translate-y-full sm:translate-y-0 transition-transform duration-300 shadow-2xl border border-gray-100 dark:border-brand-borderDark">
+            
+            <!-- Modal Header / Image Area -->
+            <div class="relative h-48 sm:h-56 bg-brand-dark flex items-center justify-center overflow-hidden">
+                <div id="modalProductVisual" class="w-full h-full flex items-center justify-center p-6 text-center text-white relative">
+                    <!-- Dynamic artwork background / badge -->
+                </div>
+
+                <button onclick="closeProductModal()" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/50 text-white flex items-center justify-center backdrop-blur-md hover:bg-black/70 transition-colors">
+                    <i class="fa-solid fa-xmark text-sm"></i>
+                </button>
+            </div>
+
+            <!-- Modal Scrollable Body -->
+            <div class="p-5 overflow-y-auto space-y-4 flex-1">
+                <div>
+                    <span id="modalBadge" class="inline-block px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-brand-red text-white mb-2">
+                        BEST SELLER
+                    </span>
+                    <h2 id="modalProductName" class="text-lg font-black text-gray-900 dark:text-white leading-tight">
+                        Nama Produk
+                    </h2>
+                    <p id="modalProductSubtitle" class="text-xs text-gray-500 dark:text-gray-400 mt-1 font-medium">
+                        Subtitle
+                    </p>
+                </div>
+
+                <!-- Price Box -->
+                <div class="flex items-baseline space-x-3 bg-gray-50 dark:bg-gray-800/60 p-3.5 rounded-2xl border border-gray-100 dark:border-gray-700">
+                    <span id="modalSalePrice" class="text-xl font-black text-brand-red">Rp10.000</span>
+                    <span id="modalNormalPrice" class="text-xs text-gray-400 line-through">Rp35.000</span>
+                    <span id="modalSaveBadge" class="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400">HEMAT</span>
+                </div>
+
+                <!-- Description -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1.5">Deskripsi Produk</h4>
+                    <p id="modalDescription" class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Deskripsi
+                    </p>
+                </div>
+
+                <!-- Included Features List -->
+                <div id="modalFeaturesContainer">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Yang Kamu Dapatkan</h4>
+                    <ul id="modalFeaturesList" class="space-y-1.5 text-xs text-gray-700 dark:text-gray-300">
+                        <!-- JS injected list items -->
+                    </ul>
+                </div>
+
+                <!-- Compatibility & Meta -->
+                <div class="grid grid-cols-2 gap-2 text-[11px] pt-2 border-t border-gray-100 dark:border-brand-borderDark">
+                    <div>
+                        <span class="block font-bold text-gray-400">Kompatibilitas</span>
+                        <span id="modalCompatibility" class="font-semibold text-gray-800 dark:text-gray-200">Alight Motion, CapCut</span>
+                    </div>
+                    <div>
+                        <span class="block font-bold text-gray-400">Hak Lisensi</span>
+                        <span id="modalLicense" class="font-semibold text-gray-800 dark:text-gray-200">Penggunaan Pribadi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Fixed Bottom Action CTA -->
+            <div class="p-4 border-t border-gray-100 dark:border-brand-borderDark bg-white dark:bg-brand-cardDark flex items-center space-x-3">
+                <button onclick="closeProductModal()" class="px-4 py-3 rounded-2xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-bold text-xs hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                    Batal
+                </button>
+                <button id="modalActionBtn" onclick="handleProductBuyNow()" class="flex-1 py-3 rounded-2xl bg-brand-red hover:bg-brand-darkRed text-white font-bold text-xs sm:text-sm flex items-center justify-center space-x-2 shadow-floating transition-all">
+                    <span>Buy Now / Ambil Produk</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ORDER SUMMARY / CHECKOUT MODAL -->
+    <div id="checkoutModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4">
+        <div class="w-full max-w-md bg-white dark:bg-brand-cardDark rounded-3xl p-6 shadow-2xl border border-gray-100 dark:border-brand-borderDark relative">
+            <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:hover:text-white">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="flex items-center space-x-2 text-brand-red mb-2">
+                <i class="fa-solid fa-receipt text-lg"></i>
+                <h3 class="text-base font-black text-gray-900 dark:text-white">Ringkasan Pesanan</h3>
+            </div>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-4">Isi data singkat untuk melanjutkan pemesanan via WhatsApp.</p>
+
+            <!-- Selected Item Preview -->
+            <div class="bg-gray-50 dark:bg-gray-800/60 p-3.5 rounded-2xl border border-gray-100 dark:border-gray-700 mb-4">
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-wider block mb-0.5">Produk Dipilih</span>
+                <h4 id="checkoutProductName" class="text-xs font-extrabold text-gray-800 dark:text-gray-100">PAKET ASET EDITING LENGKAP</h4>
+                <div class="flex justify-between items-center mt-2 pt-2 border-t border-gray-200 dark:border-gray-700">
+                    <span class="text-xs text-gray-500 dark:text-gray-400">Total Pembayaran:</span>
+                    <span id="checkoutPrice" class="text-sm font-black text-brand-red">Rp10.000</span>
+                </div>
+            </div>
+
+            <!-- Form Fields -->
+            <div class="space-y-3 mb-6">
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Nama Pembeli</label>
+                    <input type="text" id="buyerNameInput" placeholder="Masukkan nama kamu..." class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200 focus:outline-none focus:border-brand-red">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Nomor WhatsApp</label>
+                    <input type="tel" id="buyerPhoneInput" placeholder="08xxxxxxxxxx" class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200 focus:outline-none focus:border-brand-red">
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <button onclick="confirmOrderAndRedirectWA()" class="w-full py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm flex items-center justify-center space-x-2 shadow-md transition-all">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Lanjut ke WhatsApp</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="fixed top-5 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-full bg-brand-black text-white text-xs font-semibold shadow-floating flex items-center space-x-2 opacity-0 pointer-events-none transition-all duration-300">
+        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+        <span id="toastMessage">Pesan Toast</span>
+    </div>
+
+    <script>
+        // ==========================================
+        // CONSTANTS & BRAND CONFIGURATION
+        // ==========================================
+        const WA_NUMBER = "6285608677409"; // 085608677409 formatted
+
+        // ==========================================
+        // PRODUCT DATA STRUCTURE
+        // ==========================================
+        const PRODUCTS = [
+            {
+                id: 1,
+                name: "PAKET ASET EDITING LENGKAP (31GB+)",
+                subtitle: "Google Drive • Siap Pakai • Tinggal Download",
+                category: "Editing",
+                normalPrice: 35000,
+                salePrice: 10000,
+                badge: "BEST SELLER",
+                badgeColor: "bg-brand-red",
+                isFree: false,
+                icon: "fa-folder-open",
+                description: "Paket aset editing lengkap untuk content creator, video editor, designer, dan pengguna aplikasi editing yang membutuhkan banyak bahan siap pakai.",
+                features: [
+                    "Sound Effect Viral: TikTok, Reels, Transition, Bass Drop, Cinematic, Meme",
+                    "Background Premium: Green Screen, Motion BG, Aesthetic, Gaming, Cinematic",
+                    "Icon & Animasi: Icon Karakter, Emoji Animasi, Overlay Siap Pakai",
+                    "Total Ukuran File: 31GB+ Terorganisir Rapi"
+                ],
+                compatible: "Alight Motion, CapCut, KineMaster, Premiere Pro, Filmora",
+                license: "Penggunaan Komersial & Kreator",
+                driveUrl: "https://drive.google.com"
+            },
+            {
+                id: 2,
+                name: "3500++ Sound Effect & Backsound",
+                subtitle: "Sound Effect • Meme • Transition • Backsound",
+                category: "Sound",
+                normalPrice: 38000,
+                salePrice: 5000,
+                badge: "HEMAT",
+                badgeColor: "bg-emerald-600",
+                isFree: false,
+                icon: "fa-music",
+                description: "Kumpulan audio siap pakai pilihan untuk meningkatkan tensi dan kelucuan konten video pendek kamu.",
+                features: [
+                    "3500++ File Sound Effect & Meme Sound Viral",
+                    "File audio tertata rapi dalam folder terstruktur",
+                    "Resell Rights / Boleh dijual ulang & dipakai komersial",
+                    "Meningkatkan engagement video TikTok, Reels & Shorts"
+                ],
+                compatible: "Semua Aplikasi Editing Video & HP",
+                license: "Hak Jual Kembali (Resell Rights)",
+                driveUrl: "https://drive.google.com"
+            },
+            {
+                id: 3,
+                name: "001 Free Prompt Universal Pose Angel Kamera Atas — ChatGPT",
+                subtitle: "Prompt ChatGPT • Visual Aesthetic • Free Drive",
+                category: "AI Prompt",
+                normalPrice: 0,
+                salePrice: 0,
+                badge: "FREE",
+                badgeColor: "bg-emerald-600",
+                isFree: true,
+                icon: "fa-gift",
+                description: "Prompt universal untuk membantu menghasilkan variasi visual artistik dengan pose sudut pandang kamera atas yang aesthetic.",
+                features: [
+                    "Kompatibel langsung dengan ChatGPT / Midjourney / Bing AI",
+                    "Mendukung style: Anime, Real Photo, Gaming, Animal, Poster",
+                    "Copy-paste ready dilengkapi petunjuk penggunaan",
+                    "100% Gratis tanpa biaya"
+                ],
+                compatible: "ChatGPT, Midjourney, Leonardo AI",
+                license: "Free Usage",
+                driveUrl: "https://docs.google.com"
+            },
+            {
+                id: 4,
+                name: "002 PROMPT UNIVERSAL POSE DUDUK — CHATGPT",
+                subtitle: "Generative AI • Pose Duduk Aesthetic • Copy-Paste",
+                category: "AI Prompt",
+                normalPrice: 10000,
+                salePrice: 5000,
+                badge: "PROMO",
+                badgeColor: "bg-amber-600",
+                isFree: false,
+                icon: "fa-wand-magic-sparkles",
+                description: "Tingkatkan kualitas konten visual menggunakan prompt engineering yang dirancang khusus untuk menghasilkan gambar berkualitas tinggi dan konsisten.",
+                features: [
+                    "Format Dokumen Digital Copy-Paste Ready",
+                    "Dilengkapi variabel pose, lighting, dan outfit yang dapat diubah",
+                    "Hasil artistik konsisten untuk berbagai karakter",
+                    "Panduan lengkap optimasi variabel prompt"
+                ],
+                compatible: "ChatGPT & AI Image Generators",
+                license: "Personal License",
+                driveUrl: "https://docs.google.com"
+            }
+        ];
+
+        // ==========================================
+        // STATE MANAGEMENT
+        // ==========================================
+        let currentTab = 'home';
+        let currentCategory = 'All';
+        let searchQuery = '';
+        let userSaldo = 0;
+        let orderHistory = JSON.parse(localStorage.getItem('amd_orders') || '[]');
+        let activeProduct = null;
+
+        // ==========================================
+        // INITIALIZATION ON LOAD
+        // ==========================================
+        window.addEventListener('DOMContentLoaded', () => {
+            renderCatalog();
+            renderHistory();
+            updateAccountStats();
+        });
+
+        function formatRupiah(amount) {
+            if (amount === 0) return "GRATIS";
+            return "Rp" + amount.toLocaleString('id-ID');
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMessage');
+            toastMsg.innerText = msg;
+            toast.classList.remove('opacity-0', 'pointer-events-none');
+            toast.classList.add('opacity-100');
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'pointer-events-none');
+                toast.classList.remove('opacity-100');
+            }, 2800);
+        }
+
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            showToast(isDark ? "Dark Mode Aktif" : "Light Mode Aktif");
+        }
+
+        function toggleSideMenu() {
+            const drawer = document.getElementById('sideDrawer');
+            const overlay = document.getElementById('sideDrawerOverlay');
+            const isOpen = !drawer.classList.contains('-translate-x-full');
+
+            if (isOpen) {
+                drawer.classList.add('-translate-x-full');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+            } else {
+                drawer.classList.remove('-translate-x-full');
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+            }
+        }
+
+        function switchTab(tabId) {
+            currentTab = tabId;
+            
+            // Hide all view sections
+            document.querySelectorAll('main > section').forEach(sec => sec.classList.add('hidden'));
+            
+            // Show target section
+            const target = document.getElementById(`view-${tabId}`);
+            if (target) {
+                target.classList.remove('hidden');
+            }
+
+            // Update bottom nav highlighting
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active-tab');
+            });
+            const activeNav = document.getElementById(`nav-${tabId}`);
+            if (activeNav) {
+                activeNav.classList.add('active-tab');
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function scrollToCatalog() {
+            const el = document.getElementById('catalog-section');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function renderCatalog() {
+            const grid = document.getElementById('productGrid');
+            const empty = document.getElementById('emptyState');
+            grid.innerHTML = '';
+
+            const filtered = PRODUCTS.filter(p => {
+                const matchesCat = (currentCategory === 'All') || (p.category === currentCategory);
+                const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                                      p.subtitle.toLowerCase().includes(searchQuery.toLowerCase());
+                return matchesCat && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                empty.classList.remove('hidden');
+                return;
+            } else {
+                empty.classList.add('hidden');
+            }
+
+            filtered.forEach(product => {
+                const card = document.createElement('div');
+                card.className = "bg-white dark:bg-brand-cardDark rounded-2xl border border-gray-100 dark:border-brand-borderDark shadow-soft hover:shadow-glow transition-all flex flex-col justify-between overflow-hidden group";
+                
+                const saveAmount = product.normalPrice - product.salePrice;
+                const saveBadgeHtml = (!product.isFree && saveAmount > 0) 
+                    ? `<span class="text-[9px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-1.5 py-0.5 rounded">HEMAT ${formatRupiah(saveAmount)}</span>` 
+                    : '';
+
+                card.innerHTML = `
+                    <div>
+                        <!-- Visual Header -->
+                        <div class="h-28 sm:h-36 bg-gradient-to-br from-brand-black via-gray-900 to-brand-dark p-3 flex flex-col justify-between relative overflow-hidden cursor-pointer" onclick="openProductDetail(${product.id})">
+                            <div class="flex justify-between items-start z-10">
+                                <span class="px-2 py-0.5 rounded-md text-[9px] font-bold text-white ${product.badgeColor}">
+                                    ${product.badge}
+                                </span>
+                                <i class="fa-solid ${product.icon} text-white/30 text-3xl group-hover:scale-110 group-hover:text-brand-red transition-all"></i>
+                            </div>
+                            <div class="z-10">
+                                <span class="text-[10px] text-gray-400 font-semibold tracking-wider uppercase">${product.category}</span>
+                            </div>
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="p-3.5">
+                            <h3 onclick="openProductDetail(${product.id})" class="font-extrabold text-xs sm:text-sm text-gray-900 dark:text-white leading-tight line-clamp-2 hover:text-brand-red cursor-pointer transition-colors">
+                                ${product.name}
+                            </h3>
+                            <p class="text-[11px] text-gray-500 dark:text-gray-400 mt-1 line-clamp-1">
+                                ${product.subtitle}
+                            </p>
+
+                            <!-- Price Display -->
+                            <div class="mt-3 flex flex-wrap items-baseline gap-1.5">
+                                <span class="font-black text-sm text-brand-red">
+                                    ${product.isFree ? 'GRATIS' : formatRupiah(product.salePrice)}
+                                </span>
+                                ${!product.isFree ? `<span class="text-[10px] text-gray-400 line-through">${formatRupiah(product.normalPrice)}</span>` : ''}
+                            </div>
+                            ${saveBadgeHtml}
+                        </div>
+                    </div>
+
+                    <!-- Card Footer Actions -->
+                    <div class="p-3 pt-0 grid grid-cols-2 gap-2">
+                        <button onclick="openProductDetail(${product.id})" class="py-2 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-bold text-[11px] hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                            Detail
+                        </button>
+                        <button onclick="handleProductDirectClick(${product.id})" class="py-2 rounded-xl bg-brand-red hover:bg-brand-darkRed text-white font-bold text-[11px] shadow-sm transition-colors">
+                            ${product.isFree ? 'Ambil' : 'Buy Now'}
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function filterCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                if (btn.innerText.includes(cat) || (cat === 'All' && btn.innerText.includes('Semua'))) {
+                    btn.className = "cat-pill active px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-brand-red text-white transition-all shadow-sm";
+                } else {
+                    btn.className = "cat-pill px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all";
+                }
+            });
+            renderCatalog();
+        }
+
+        function handleSearch() {
+            searchQuery = document.getElementById('searchInput').value;
+            renderCatalog();
+        }
+
+        function openProductDetail(productId) {
+            const product = PRODUCTS.find(p => p.id === productId);
+            if (!product) return;
+
+            activeProduct = product;
+
+            // Populate Modal Fields
+            document.getElementById('modalBadge').innerText = product.badge;
+            document.getElementById('modalBadge').className = `inline-block px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider text-white ${product.badgeColor}`;
+            document.getElementById('modalProductName').innerText = product.name;
+            document.getElementById('modalProductSubtitle').innerText = product.subtitle;
+            document.getElementById('modalSalePrice').innerText = product.isFree ? "GRATIS" : formatRupiah(product.salePrice);
+            
+            const normalPriceEl = document.getElementById('modalNormalPrice');
+            const saveBadgeEl = document.getElementById('modalSaveBadge');
+            
+            if (product.isFree) {
+                normalPriceEl.classList.add('hidden');
+                saveBadgeEl.classList.add('hidden');
+            } else {
+                normalPriceEl.classList.remove('hidden');
+                normalPriceEl.innerText = formatRupiah(product.normalPrice);
+                saveBadgeEl.classList.remove('hidden');
+                saveBadgeEl.innerText = `HEMAT ${formatRupiah(product.normalPrice - product.salePrice)}`;
+            }
+
+            document.getElementById('modalDescription').innerText = product.description;
+            
+            // Features
+            const list = document.getElementById('modalFeaturesList');
+            list.innerHTML = '';
+            product.features.forEach(feat => {
+                const li = document.createElement('li');
+                li.className = "flex items-start space-x-2";
+                li.innerHTML = `<i class="fa-solid fa-check text-brand-red mt-0.5 text-[10px]"></i><span>${feat}</span>`;
+                list.appendChild(li);
+            });
+
+            document.getElementById('modalCompatibility').innerText = product.compatible;
+            document.getElementById('modalLicense').innerText = product.license;
+
+            // Visual Box Header
+            document.getElementById('modalProductVisual').innerHTML = `
+                <div class="space-y-1">
+                    <i class="fa-solid ${product.icon} text-4xl text-brand-red mb-2"></i>
+                    <h3 class="font-extrabold text-sm text-white max-w-xs">${product.name}</h3>
+                    <p class="text-[10px] text-gray-400">AMD.fx Official Asset</p>
+                </div>
+            `;
+
+            // Action Button Text
+            const actBtn = document.getElementById('modalActionBtn');
+            if (product.isFree) {
+                actBtn.innerHTML = `<span>Ambil Prompt Gratis</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>`;
+            } else {
+                actBtn.innerHTML = `<span>Buy Now — ${formatRupiah(product.salePrice)}</span> <i class="fa-solid fa-arrow-right text-xs"></i>`;
+            }
+
+            // Show Modal
+            const modal = document.getElementById('productModal');
+            const content = document.getElementById('productModalContent');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            content.classList.remove('translate-y-full');
+        }
+
+        function closeProductModal() {
+            const modal = document.getElementById('productModal');
+            const content = document.getElementById('productModalContent');
+            content.classList.add('translate-y-full');
+            setTimeout(() => {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+            }, 200);
+        }
+
+        function handleProductDirectClick(productId) {
+            const product = PRODUCTS.find(p => p.id === productId);
+            if (!product) return;
+
+            if (product.isFree) {
+                showToast("Membuka Google Docs Drive Prompt...");
+                window.open(product.driveUrl, '_blank');
+            } else {
+                activeProduct = product;
+                openCheckoutModal();
+            }
+        }
+
+        function handleProductBuyNow() {
+            closeProductModal();
+            if (!activeProduct) return;
+
+            if (activeProduct.isFree) {
+                showToast("Membuka Akses Prompt Gratis...");
+                window.open(activeProduct.driveUrl, '_blank');
+            } else {
+                setTimeout(() => {
+                    openCheckoutModal();
+                }, 250);
+            }
+        }
+
+        function openCheckoutModal() {
+            if (!activeProduct) return;
+
+            document.getElementById('checkoutProductName').innerText = activeProduct.name;
+            document.getElementById('checkoutPrice').innerText = formatRupiah(activeProduct.salePrice);
+
+            const modal = document.getElementById('checkoutModal');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+        }
+
+        function closeCheckoutModal() {
+            const modal = document.getElementById('checkoutModal');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        function confirmOrderAndRedirectWA() {
+            const name = document.getElementById('buyerNameInput').value.trim() || 'Pembeli';
+            const phone = document.getElementById('buyerPhoneInput').value.trim() || '-';
+
+            if (!activeProduct) return;
+
+            // Save to Local History
+            const orderObj = {
+                id: 'AMD-' + Math.floor(100000 + Math.random() * 900000),
+                productName: activeProduct.name,
+                price: activeProduct.salePrice,
+                date: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' }),
+                status: 'Menunggu Konfirmasi',
+                buyerName: name
+            };
+
+            orderHistory.unshift(orderObj);
+            localStorage.setItem('amd_orders', JSON.stringify(orderHistory));
+            renderHistory();
+            updateAccountStats();
+
+            // Construct WA Message
+            const waMsg = `Halo AMD.fx 👋\n\nSaya ingin membeli:\n\nProduk: ${activeProduct.name}\nHarga: ${formatRupiah(activeProduct.salePrice)}\n\nNama: ${name}\nNo. WhatsApp: ${phone}\n\nMohon informasi langkah pembayaran selanjutnya.\nTerima kasih.`;
+            
+            const encodedUrl = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waMsg)}`;
+            
+            closeCheckoutModal();
+            showToast("Mengarahkan ke WhatsApp AMD.fx...");
+
+            setTimeout(() => {
+                window.open(encodedUrl, '_blank');
+            }, 600);
+        }
+
+        function openDirectWhatsApp(messageText) {
+            showToast("Membuka WhatsApp AMD.fx...");
+            const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(messageText)}`;
+            setTimeout(() => {
+                window.open(url, '_blank');
+            }, 400);
+        }
+
+        function renderHistory() {
+            const container = document.getElementById('historyList');
+            const empty = document.getElementById('historyEmpty');
+            container.innerHTML = '';
+
+            if (orderHistory.length === 0) {
+                empty.classList.remove('hidden');
+                return;
+            } else {
+                empty.classList.add('hidden');
+            }
+
+            orderHistory.forEach(ord => {
+                const item = document.createElement('div');
+                item.className = "bg-white dark:bg-brand-cardDark rounded-2xl p-4 border border-gray-100 dark:border-brand-borderDark shadow-soft flex items-center justify-between";
+                
+                item.innerHTML = `
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-[10px] font-bold text-gray-400">${ord.id}</span>
+                            <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400">
+                                ${ord.status}
+                            </span>
+                        </div>
+                        <h4 class="font-extrabold text-xs text-gray-800 dark:text-gray-100 mt-1">${ord.productName}</h4>
+                        <p class="text-[11px] text-gray-400 mt-0.5">${ord.date} • ${ord.buyerName}</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="font-black text-xs text-brand-red">${formatRupiah(ord.price)}</span>
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        function filterHistory(type) {
+            // Visual active toggle
+            document.querySelectorAll('.hist-filter').forEach(btn => {
+                btn.className = "hist-filter px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-brand-cardDark border border-gray-200 dark:border-brand-borderDark text-gray-700 dark:text-gray-300";
+            });
+            event.target.className = "hist-filter active px-3.5 py-1.5 rounded-xl text-xs font-bold bg-brand-red text-white shadow-sm";
+        }
+
+        function selectTopupNominal(amount) {
+            document.getElementById('customTopupInput').value = amount;
+            showToast(`Nominal ${formatRupiah(amount)} dipilih.`);
+        }
+
+        function processTopUpWhatsApp() {
+            const inputVal = parseInt(document.getElementById('customTopupInput').value) || 0;
+            if (inputVal <= 0) {
+                showToast("Silakan pilih atau masukkan nominal top up.");
+                return;
+            }
+
+            const msg = `Halo AMD.fx, saya ingin melakukan isi saldo sebesar ${formatRupiah(inputVal)}.`;
+            openDirectWhatsApp(msg);
+        }
+
+        function updateAccountStats() {
+            document.getElementById('accountTotalOrders').innerText = orderHistory.length;
+        }
+    </script>
+</body>
+</html>
