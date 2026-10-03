@@ -957,7 +957,8 @@
                 badge: "BEST SELLER",
                 badgeColor: "bg-brand-red",
                 isFree: false,
-                icon: "fa-folder-open",
+                icon: "fa-folder-open"
+                image: "https://i.ibb.co.com/svq648Sp/IMG-20261002-234642.png",
                 description: "Paket aset editing lengkap untuk content creator, video editor, designer, dan pengguna aplikasi editing yang membutuhkan banyak bahan siap pakai.",
                 features: [
                     "Sound Effect Viral: TikTok, Reels, Transition, Bass Drop, Cinematic, Meme",
@@ -1258,13 +1259,15 @@
             document.getElementById('modalLicense').innerText = product.license;
 
             // Visual Box Header
-            document.getElementById('modalProductVisual').innerHTML = `
-                <div class="space-y-1">
-                    <i class="fa-solid ${product.icon} text-4xl text-brand-red mb-2"></i>
-                    <h3 class="font-extrabold text-sm text-white max-w-xs">${product.name}</h3>
-                    <p class="text-[10px] text-gray-400">AMD.fx Official Asset</p>
-                </div>
-            `;
+            document.getElementById('modalProductVisual').innerHTML = product.image
+    ? `<img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">`
+    : `
+        <div class="space-y-1">
+            <i class="fa-solid ${product.icon} text-4xl text-brand-red mb-2"></i>
+            <h3 class="font-extrabold text-sm text-white max-w-xs">${product.name}</h3>
+            <p class="text-[10px] text-gray-400">AMD.fx Official Asset</p>
+        </div>
+    `;
 
             // Action Button Text
             const actBtn = document.getElementById('modalActionBtn');
